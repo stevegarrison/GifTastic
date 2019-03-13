@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GifTastic!</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container border mt-3 bg-dark">
+        <div class="row mb-5 mr-2 ml-2">
+            <div class="col-md-3 mt-4">
+                <form class="border p-3 bg-light">
+                    <div class="form-group text-center">
+                        <label id="search-header">Search Term</label>
+                        <input type="text" class="form-control" id="search-term">
+                        <button type="submit" class="btn btn-success mt-2" id="search"><i class="fas fa-search mr-2"></i>Search</button>
+                        <hr>
+                        <div id="search-buttons">
+
+                        </div>
+                        <button type="submit" class="btn btn-danger mt-2" id="search"><i class="fas fa-trash mr-2"></i>Clear</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-9 mt-4 border p-3 bg-light">
+                <h5 class="text-center" id="results-header">Results</h5>
+                <p class="text-center">Click to animate</p>
+                <hr>
+                <div class="m-4 p-4" id="search-results"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
